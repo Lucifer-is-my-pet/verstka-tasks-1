@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" prefix="og: http://ogp.me/ns#">
+<html lang="ru" prefix="og:http://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
     <meta name="author" content="doochik">
@@ -14,11 +14,11 @@
             font-family: Verdana, sans-serif;
             font-size: 14px;
         }
-        
+
         article:not(:last-child) {
 		    border-bottom: 1px solid black;
 		}
-                
+
         body > footer {
         	text-align: right;
         }
@@ -30,7 +30,7 @@
         th, td {
             padding: 3px;
         }
-		
+
 		ul {
             list-style: square;
         }
@@ -50,7 +50,7 @@
         .red {
             color: red;
         }
-		
+
 		.bold {
 		    font-weight: bold;
 		}
@@ -241,7 +241,7 @@ var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'
                     <dfn>Алгоритм Бройдена — Флетчера — Гольдфарба — Шанно (BFGS)</dfn> — итерационный
                     метод численной оптимизации, предназначенный для нахождения локального максимума/минимума
                     нелинейного функционала без ограничений:
-		        </p>        
+		        </p>
                 <pre>
 дано <var>ε</var>, <var>x<sub>0</sub></var>
 инициализировать <var>H<sub>0</sub></var>
@@ -257,15 +257,22 @@ var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'
 				</pre>
                 <p>
 				    Почему именно алгоритм Флетчера, а не другие популярные алгоритмы вроде:
-				    <dfn>CRC16/32</dfn> - алгоритм нахождения контрольной суммы, предназначенный для проверки
-				    целостности данных, <dfn>md5</dfn> - 128-битный алгоритм хеширования, предназначенный для создания
-				    «отпечатков» или дайджестов сообщения произвольной длины и последующей проверки их подлинности.
+                    <dl>
+                        <dt>CRC16/32</dt>
+                        <dd>алгоритм нахождения контрольной суммы, предназначенный для проверки
+                            целостности данных,
+                        </dd>
+                        <dt>md5</dt>
+                        <dd>128-битный алгоритм хеширования, предназначенный для создания «отпечатков»
+                            или дайджестов сообщения произвольной длины и последующей проверки их подлинности.
+                        </dd>
+                    </dl>
                 </p>
                 <p>Потому что он быстрый, компактный и легок в реализации.</p>
             </section>
             <section>
                 <h3>Итог</h3>
-                <p>Фактически мы экономим 80-90% трафика. Размер загружаемой статики в байтах:
+                <p>Фактически мы экономим <strong>80-90%</strong> трафика. Размер загружаемой статики в байтах:
 	                <table>
 	                    <thead>
 	                        <tr>
@@ -296,7 +303,7 @@ var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'
                 <footer>
                     Авор: <a href="http://habrahabr.ru/users/doochik/">@doochik</a><br>
                     С++ разработчик<br>
-                    <address>Электронная почта: 
+                    <address>Электронная почта:
 					(<a href="mailto:doochik@yandex-team.ru">doochik@yandex-team.ru</a>)</address>
                     Компания: Яндекс
                 </footer>
@@ -304,7 +311,7 @@ var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'
             <section>
                 <h4>Комментарии (4):</h4>
                 <article>
-                    - <span class="red">M</span>ogaika 
+                    - <span class="red">M</span>ogaika
                     (<a href="mailto:mogaika@yandex-team.ru">mogaika@yandex-team.ru</a>)
                     <time datetime="2014-11-30T17:05">30 ноября 2014 в 17:05</time>
                     <p>А можете привести сравнение, на сколько быстрее грузится lite версия?</p>
@@ -318,7 +325,7 @@ var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'
                     </p>
                 </article>
                 <article>
-                    - <span class="red">B</span>rister 
+                    - <span class="red">B</span>rister
                     (<a href="mailto:brist89@yandex-team.ru">brist89@yandex-team.ru</a>)
                     <time datetime="2014-11-24T13:13">24 ноября 2014 в 13:13</time>
                     <p>
@@ -330,10 +337,11 @@ var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'
                         наверное все-таки от 0.5 до 1
                     </p>
                 </article>
-                <article>- <span class="red">a</span>lexeimois (<a href="mailto:test@yandex.ru">test@yandex.ru</a>)
+                <article>
+                    - <span class="red">a</span>lexeimois (<a href="mailto:test@yandex.ru">test@yandex.ru</a>)
                     <time datetime="2014-11-22T17:35">22 ноября 2014 в 17:35</time>
                     <p>
-                        Мы измеряем скорость загрузки с помощью 
+                        Мы измеряем скорость загрузки с помощью
                         <a href="help.yandex.ru/metrika/reports/monitoring_timing.xml">Яндекс.Метрики</a>
                     </p>
                 </article>
@@ -342,7 +350,7 @@ var totalTime = this.timings['look-ma-finish'] - this.timings['look-ma-im-start'
     </main>
     <footer>
         <address>
-            &copy; <a href="https://www.yandex.ru" style="color: black"><span class="red">Я</span>ндекс</a>, 
+            &copy; <a href="https://www.yandex.ru" style="color: black"><span class="red">Я</span>ндекс</a>,
             <a href="mailto:help@yandex.ru">help@yandex.ru</a>, Хохрякова, 10
         </address>
     </footer>
